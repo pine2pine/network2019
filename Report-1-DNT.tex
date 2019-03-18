@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[latin1]{inputenc}
+
+\title{Labwork 1 -- Report}
+\author{Nhu-Tung Doan}
+\date{18/03/2019}
+
+\begin{document}
+\maketitle
+
+Using Viettel 4G connection, \texttt{traceroute} from my laptop to \texttt{USTH.edu.vn} server gave the following results.
+
+\begin{verbatim}
+traceroute to usth.edu.vn (104.27.161.15), 30 hops max, 60 byte packets
+ 1  192.168.43.1 (192.168.43.1)  6.011 ms  6.986 ms  7.393 ms
+ 2  10.202.4.140 (10.202.4.140)  36.571 ms * *
+ 3  10.202.253.137 (10.202.253.137)  48.949 ms 10.202.253.73 (10.202.253.73)  54.176 ms 10.202.253.137 (10.202.253.137)  49.204 ms
+ 4  10.202.253.74 (10.202.253.74)  48.562 ms 10.202.253.138 (10.202.253.138)  50.512 ms  51.008 ms
+ 5  171.255.64.9 (171.255.64.9)  53.561 ms  52.650 ms 171.255.64.1 (171.255.64.1)  54.772 ms
+ 6  localhost (27.68.230.97)  87.984 ms  66.827 ms localhost (27.68.230.89)  69.457 ms
+ 7  localhost (27.68.228.9)  74.137 ms  75.326 ms  75.132 ms
+ 8  localhost (27.68.240.8)  71.271 ms  71.468 ms  72.298 ms
+ 9  203.131.248.245 (203.131.248.245)  69.098 ms  68.821 ms  69.924 ms
+10  ae-12.r03.tkokhk01.hk.bb.gin.ntt.net (129.250.5.254)  92.893 ms  93.889 ms  94.875 ms
+11  ae-11.r24.tkokhk01.hk.bb.gin.ntt.net (129.250.6.99)  79.055 ms  80.386 ms  47.706 ms
+12  ae-6.r20.sngpsi07.sg.bb.gin.ntt.net (129.250.7.66)  86.885 ms  86.420 ms  103.226 ms
+13  ae-1.r01.sngpsi07.sg.bb.gin.ntt.net (129.250.3.100)  103.161 ms  103.132 ms  94.867 ms
+14  116.51.31.126 (116.51.31.126)  95.983 ms  108.964 ms  108.940 ms
+15  104.27.161.15 (104.27.161.15)  93.700 ms  102.862 ms  102.768 ms
+\end{verbatim}
+
+
+\end{document}
