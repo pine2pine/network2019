@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[latin1]{inputenc}
+
+\title{Labwork 2 -- gethostbyname}
+\author{Nhu-Tung Doan}
+\date{19/03/2019}
+
+\begin{document}
+\maketitle
+
+This is the output from my c program. The first run is with command line argument, the second is with \texttt{STDIN}.
+
+\begin{verbatim}
+morpheus@morpheus-pc:~/m-201b/lab2$ ./gethostbyname usth.edu.vn
+Looking up host name: usth.edu.vn
+IP addresses:
+104.27.161.15
+104.27.160.15
+
+morpheus@morpheus-pc:~/m-201b/lab2$ ./gethostbyname
+facebook.com
+Looking up host name: facebook.com
+IP addresses:
+157.240.15.35
+\end{verbatim}
+
+
+\end{document}
