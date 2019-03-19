@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[latin1]{inputenc}
+
+\title{Labwork 3 -- Server Setup}
+\author{Nhu-Tung Doan}
+\date{19/03/2019}
+
+\begin{document}
+\maketitle
+
+This is the output from the server:
+
+\begin{verbatim}
+morpheus@morpheus-pc:~/m-201b/lab2$ ./serveraccept 
+Listening on port 8784...
+New connection accepted.
+Just close all connections and exit.
+morpheus@morpheus-pc:~/m-201b/lab2$
+\end{verbatim}
+
+This is the output from the client (using \texttt{TELNET}):
+
+\begin{verbatim}
+morpheus@morpheus-pc:~$ telnet localhost 8784
+Trying ::1...
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+Connection closed by foreign host.
+morpheus@morpheus-pc:~$ 
+\end{verbatim}
+
+\end{document}
