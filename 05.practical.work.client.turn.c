@@ -53,8 +53,8 @@ int main(int argc, char **argv)
 
     while (1) {
     	printf(">>> Message to send?: ");
-        scanf("%s", msg);
-        msg[MAX_MSG_SIZE - 1] = 0; // making sure the string is terminated
+        fgets(msg, MAX_MSG_SIZE, stdin);
+        msg[strlen(msg) - 1] = 0; // stripping newline char at the end
         send( sock_fd, msg, strlen(msg) + 1, 0);
 
         printf(">>> SERVER: ");

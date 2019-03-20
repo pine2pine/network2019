@@ -57,8 +57,8 @@ int main( int argc, char *argv[] )
         printf("%s\n", msg);
 
         printf(">>> Reply?: ");
-        scanf("%s", reply);
-        reply[MAX_MSG_SIZE - 1] = 0;
+        fgets(reply, MAX_MSG_SIZE, stdin);
+        reply[strlen(reply) - 1] = 0; // stripping newline char at the end
         send(data_fd, reply, strlen(reply) + 1, 0);
         printf("---------- Reply sent. Next turn! -------------\n");
     }
